@@ -126,3 +126,9 @@ body {
     float: right;
 }
 
+@media (max-width: 500px) {
+    .myself {
+    float:none;
+}
+}
+
