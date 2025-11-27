@@ -7,60 +7,80 @@
     <meta name="keywords" content="cv, Anastasiia, resume>
     <meta name="description" content="мое резюме">
       <title>Anastasiia Resume</title>
+      <style>
+        .container {
+            padding: 20px;
+            max-width: 750px;
+            font-size: medium;
+        }
+        @media (max-width: 650px) {
+            .container {
+                display: block;
+                padding: 10px;
+                font-size: small;
+            }
+        }
+      </style>
 </head>
 <body>
-    <img src="photo_2025-08-04_17-31-19.jpg" width="200">
-    <h1>Анастасия Шинкарева</h1>
+    <link rel="stylesheet" href="01_css.css">
+    <div class="container">
+        <img src="photo_2025-08-04_17-31-19.jpg" width="200" class="image">
+        <div class="myself">
+        <h1>Анастасия Шинкарева</h1>
         <p>Я - <strong>Frontend Junior Developer.</strong></p>
         <hr noshade color="black"> 
-        <br>Я люблю <em>путешествовать, читать и коллекционировать винил.</em>
+        <br>Я люблю <em>путешествовать, читать и коллекционировать винил.</em> 
+        </div>
+        <br>
+        <div class="hobby">
         <h2>Мои хобби</h2>
-        <p><ol>
+        <p><ol class="order">
             <li>Путешествовать</li>
             <li>Читать</li>
             <li>Коллекционировать винил</li>
+            </div>
         </ol></p>
-    <h2>Cписок социальных сетей</h2>
-        <p><a href="https://t.me/casterlyrock13" target="_blank"><strong>Telegram</strong></a></p> 
-       <br><table width="300">
+        <div class="list">
+            <h2>Cписок социальных сетей</h2>
+        <a href="https://t.me/casterlyrock13" target="_blank"><strong>Telegram</strong></a>
+        |
+        <a href="#" target="_blank"><strong>Instagram</strong></a>
+    </div>
+        <br><div class="job">
+        <br>
+        <table class="tab">
         <h2>Опыт работы</h2>
-        <thead>
-        <tr>
-            <th>Название работы</th>
-            <th>Должность</th>
-            <th>Период работы</th>
-        </tr>    
-        </thead>
-        <tbody></tbody>
-        <tr>
-            <td>Переводчик</td>
-            <td>Устный переводчик</td>
-            <td>4 года</td>
+            <tr>
+            <td><strong>Переводчик</strong></td>
+            <td><strong>Устный переводчик</strong></td>
+            <td><strong>4 года</strong></td>
         </tr>
         <tr>
-            <td>Аналитик</td>
-            <td>Аналитик данных</td>
-            <td>5 лет</td>
+            <td><strong>Аналитик</strong></td>
+            <td><strong>Аналитик данных</strong></td>
+            <td><strong>5 лет</strong></td>
         </tr>
         </tbody>        
-        </table> 
-
+        </table>
+        </div>
         <h2>Связаться со мной</h2>
         <form>
-        <div>
-        <label for="name">Ваше имя</label>
-        <input type="name" id="name" value="" placeholder="Введите имя">
+        <div class="form-row">
+            <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="name" id="name" value="" placeholder="Введите имя" class="label">
         </div>
-        <div>
-        <label for="email">Ваш email</label>
-        <input type="email" id="email" value="" placeholder="Введите email">
+        <div class="form-group">
+            <label for="email">Ваш email</label>
+            <input type="email" id="email" class="input" placeholder="Введите email">
         </div>
-        <div>
+        </div>
+        <div class="form-group">
         <label for="message">Ваше сообщение</label>
-        <br>
-        <textarea id="message" cols="50" rows="5" placeholder="Введите сообщение"></textarea>
+        <textarea id="message" cols="50" rows="5" placeholder="Введите сообщение" class="textarea"></textarea>
         </div>
-        <button>Отправить</button>
+        <button class="btn">Отправить</button>
         </form>
 
 </body>
