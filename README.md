@@ -2,5 +2,4 @@
 
 ## Результат вы можете посмотреть тут
 
-
-[Моя первая работа на HTML&CSS] {https://darklot-hub.github.io/resume/}
+[Моя первая работа HTML & CSS](https://darklot-hub.github.io/resume/)
